@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    border: solid 3px black;
+    width: 1200px;
+    height: 700px;
+    margin-left: 110px;
+    margin-top: 50px;
+    border-radius: 20px;
+    
+    
+}
+
+.messageContainer{
+    background-color: whitesmoke;
+    width: 1194px;
+    height: 550px;
+    padding-top: 10px;
+    display:flex;
+    overflow: auto;
+    border-bottom: solid 3px black;
+    border-radius: 20px;
+
+}
+
+
+
+.yours{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+.theirs{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap:15vh;
+    margin-top: 13vh;
+  
+}
+
+
+.yourTexts{
+    padding: 20px;
+    min-width: 30vw;
+    max-width: 30vw;
+    border-radius: 50px;
+    background-color: aqua;
+    color: blue;
+}
+
+.theirTexts{
+    color: blue;
+    background-color: green;
+    padding: 20px;
+    min-width: 30vw;
+    max-width: 30vw;
+    border-radius: 50px;
+    
+}
+
+#flex{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+#flex > input{
+    width: 300px
+    ;
+}
+
+@media only screen and (max-width: 600px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    
+    .container{
+        width: 100vw;
+        margin-left: .1vw;
+        margin-top: .1vh;
+
+    }
+    .messageContainer{
+        width: 98.5vw;
+        height: 70vh;
+    }
+
+    #flex{
+        width: 50vw;
+        margin-top: none;
+        margin-left: 20vw;
+    }
+
+    #flex > input{
+        width: 50vw
+        ;
+    }
+}
+
